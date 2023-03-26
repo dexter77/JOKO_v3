@@ -1,4 +1,4 @@
-<h1 id="logo">JOKO</h1>
+<h1 id="text-3xl font-bold place-content-center">JOKO</h1>
 
 <div class="container">
    <%= simple_form_for @user do |f| %>
@@ -9,14 +9,14 @@
         <%= f.input :password,
                     required: false,
                     input_html: { autocomplete: "current-password" } %>
-        <%= f.input :remember_me, class:"checke", as: :boolean if devise_mapping.rememberable? %>
+        <%# <%= f.input :remember_me, class:"checke", as: :boolean if devise_mapping.rememberable? %>
 
       <div class="form-actions">
         <%= f.button :submit, "Connexion", class:'send-button' %>
       </div>
     <% end %>
     <br>
-    <%= #render "devise/shared/links" %>
+    <%# <%= render "devise/shared/links" %>
   </div>
 </div>
 
