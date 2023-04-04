@@ -10,6 +10,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def new
+    @user = User.new
+  end
+
   def sign_in
     @user = User.new
     if user_signed_in?
